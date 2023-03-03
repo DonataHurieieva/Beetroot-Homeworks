@@ -8,9 +8,9 @@ public static void Main(String[] args)
    
   float x = Convert.ToSingle(Console.ReadLine());
 
-int cube = (int)Math.Pow(x,3);
+int cube =Convert.ToInt32(Math.Pow(x,3));
 int square = (int)Math.Pow(x,2);
-Math.Max(x, 3);
+//Math.Max(x, 3);
 
 float equationResult = -6 * cube + 5 *square - 10 * x + 15;
 Console.WriteLine("-6x^3 + 5x^2 - 10x + 15 = " + equationResult);
