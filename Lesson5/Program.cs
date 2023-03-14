@@ -19,6 +19,11 @@ Console.WriteLine($"\nMax values:\n{MaxValueResult},{MaxValueResult1},{MaxValueR
 int res;
  TrySumIfOdd (2,5,out res);
  TrySumIfOdd (3,3,out res);
+
+
+ Repeat("Hello!",3);
+ Repeat("How are you?",5);
+
 }
 
 public static bool TrySumIfOdd ( int a, int b, out int sum){ 
@@ -32,7 +37,7 @@ public static bool TrySumIfOdd ( int a, int b, out int sum){
         }
 
         else { odd=false;}
-        Console.WriteLine($"sum is:{sum} and it is {odd}");
+        Console.WriteLine($"sum is:{sum} and it is {odd}\n\n");
         return odd;
     
 }
@@ -64,4 +69,19 @@ int ab = a < b ? a : b;
     
 
 
-}}
+}
+
+ public static void Repeat (string x,int n) {
+          int i=0;
+
+          while(i<n){i++;
+
+           Console.WriteLine(x);
+
+
+
+
+
+}
+}
+}
