@@ -16,9 +16,26 @@ int MinValueresult2= ReturnMinValue(2,18,5,2);
 
 Console.WriteLine($"\nMax values:\n{MaxValueResult},{MaxValueResult1},{MaxValueResult2}\n\nMin values:\n {MinValueresult},{MinValueresult1},{MinValueresult2}\n");
 
+int res;
+ TrySumIfOdd (2,5,out res);
+ TrySumIfOdd (3,3,out res);
 }
 
+public static bool TrySumIfOdd ( int a, int b, out int sum){ 
+  
+         sum=a+b;
+    
+        int sum2=sum %2;
+        bool odd= false;
+        if (sum2 == 1 ){ 
+            odd= true;
+        }
 
+        else { odd=false;}
+        Console.WriteLine($"sum is:{sum} and it is {odd}");
+        return odd;
+    
+}
 
 
 
